@@ -1,7 +1,5 @@
-sudo: false
-
 env:
-  - WORKER_ID=1
+  - WORKER_ID=travis1
 
 script:
   - sudo apt-get -y update
