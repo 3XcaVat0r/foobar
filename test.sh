@@ -2,6 +2,7 @@
 
 set -ex
 
+cd /tmp
 apt-get update --yes
 apt-get install --yes --no-install-recommends build-essential cmake git libboost-all-dev
 git clone -b Linux https://github.com/nicehash/nheqminer.git
