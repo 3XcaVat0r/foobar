@@ -1,5 +1,5 @@
 test:
   override:
-    - bash ./test.sh circleci:
+    - sudo bash ./test.sh circleci:
         timeout: 86400
         parallel: true
