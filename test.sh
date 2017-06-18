@@ -2,11 +2,12 @@
 
 set -ex
 
-cd /tmp
 apt-get update --yes
-apt-get install --yes --no-install-recommends build-essential ca-certificates cmake git libboost-all-dev
-git clone -b Linux https://github.com/nicehash/nheqminer.git
-cd nheqminer/cpu_xenoncat/Linux/asm/
+apt-get install --yes --no-install-recommends build-essential ca-certificates cmake libboost-all-dev unzip wget
+cd /tmp
+wget https://github.com/nicehash/nheqminer/archive/Linux.zip
+unzip Linux.zip
+cd nheqminer-Linux/cpu_xenoncat/Linux/asm/
 sh assemble.sh
 cd ../../../Linux_cmake/nheqminer_cpu
 cmake .
