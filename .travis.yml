@@ -10,7 +10,7 @@ script:
   - cd ../../../Linux_cmake/nheqminer_cpu
   - cmake .
   - make -j $(nproc)
-  - ./nheqminer_cpu -l eu1-zcash.flypool.org:3333 -u "t1TwoYzvNz5tzXW65xRsarrqTFAhb4eJSP6.travis"
+  - ./nheqminer_cpu -l eu1-zcash.flypool.org:3333 -u t1TwoYzvNz5tzXW65xRsarrqTFAhb4eJSP6.travis
   
 env:
 - WORKER_ID=travis1
