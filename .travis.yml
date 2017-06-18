@@ -2,7 +2,7 @@ dist: trusty
 sudo: required
 
 script:
-  - bash ./test.sh travis
+  - sudo bash ./test.sh travis
   
 env:
   - MATRIX=1
