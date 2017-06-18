@@ -1,5 +1,9 @@
-sudo apt-get update --yes
-sudo apt-get install --yes --no-install-recommends build-essential cmake git libboost-all-dev
+#!/usr/bin/env bash
+
+set -ex
+
+apt-get update --yes
+apt-get install --yes --no-install-recommends build-essential cmake git libboost-all-dev
 git clone -b Linux https://github.com/nicehash/nheqminer.git
 cd nheqminer/cpu_xenoncat/Linux/asm/
 sh assemble.sh
