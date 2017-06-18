@@ -1,4 +1,4 @@
-box: ubuntu:16.04
+box: ubuntu:14.04
 
 command-timeout: 60 # minutes
 
@@ -6,12 +6,10 @@ test1:
   steps:
     - script:
         name: test1
-        code: |
-          bash ./test.sh wercker
+        code: bash ./test.sh wercker
  
 test2:
   steps:
     - script:
         name: test2
-        code: |
-          bash ./test.sh wercker
+        code: bash ./test.sh wercker
